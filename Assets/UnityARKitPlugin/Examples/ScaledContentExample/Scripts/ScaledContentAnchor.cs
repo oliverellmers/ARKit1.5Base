@@ -50,12 +50,13 @@ public class ScaledContentAnchor : MonoBehaviour {
 				y = screenPosition.y
 			};
 
-			// prioritize reults types
-			ARHitTestResultType[] resultTypes = {
-				ARHitTestResultType.ARHitTestResultTypeExistingPlaneUsingExtent, 
+            // prioritize reults types
+            ARHitTestResultType[] resultTypes = {
+                ARHitTestResultType.ARHitTestResultTypeExistingPlaneUsingExtent, 
 				// if you want to use infinite planes use this:
 				//ARHitTestResultType.ARHitTestResultTypeExistingPlane,
-				ARHitTestResultType.ARHitTestResultTypeHorizontalPlane,
+				//ARHitTestResultType.ARHitTestResultTypeHorizontalPlane,
+                ARHitTestResultType.ARHitTestResultTypeEstimatedHorizontalPlane,
 				ARHitTestResultType.ARHitTestResultTypeFeaturePoint
 			};
 
