@@ -55,6 +55,7 @@ namespace UnityEngine.XR.iOS
 					};
 
                     // prioritize reults types
+
                     ARHitTestResultType[] resultTypes = {
 						//ARHitTestResultType.ARHitTestResultTypeExistingPlaneUsingGeometry,
                         ARHitTestResultType.ARHitTestResultTypeExistingPlaneUsingExtent, 
@@ -63,8 +64,9 @@ namespace UnityEngine.XR.iOS
                         //ARHitTestResultType.ARHitTestResultTypeEstimatedHorizontalPlane, 
 						//ARHitTestResultType.ARHitTestResultTypeEstimatedVerticalPlane, 
 						//ARHitTestResultType.ARHitTestResultTypeFeaturePoint
-                    }; 
-					
+                    };
+
+                    					
                     foreach (ARHitTestResultType resultType in resultTypes)
                     {
                         if (HitTestWithResultType (point, resultType))
